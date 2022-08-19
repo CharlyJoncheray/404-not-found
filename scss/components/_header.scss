@@ -1,0 +1,23 @@
+/*=============== HEADER ===============*/
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.logo {
+  height: var(--header-height);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__title {
+    font-family: var(--header-font);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--text-color);
+  }
+}

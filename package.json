@@ -1,0 +1,19 @@
+{
+  "name": "404-not-found",
+  "version": "1.0.0",
+  "description": "Create a 404 not found page following the design. The page should be responsive.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/styles.scss:./public/css/styles.css --style expanded --no-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlyJoncheray/404-not-found.git"
+  },
+  "author": "Charly Joncheray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CharlyJoncheray/404-not-found/issues"
+  },
+  "homepage": "https://github.com/CharlyJoncheray/404-not-found#readme"
+}

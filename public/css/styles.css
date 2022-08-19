@@ -1,0 +1,173 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;700&family=Space+Mono:wght@400;700&display=swap");
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+  /*========== Colors ==========*/
+  --first-color: #ffffff;
+  --text-color: #000000;
+  --button-color: #333333;
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --header-font: "Inconsolata", monospace;
+  --body-font: "Space Mono", monospace;
+  --footer-font: "Montserrat", sans-serif;
+  --biggest-font-size: 3rem;
+  --normal-font-size: 1.125rem;
+  --smaller-font-size: .875rem;
+}
+@media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --normal-font-size: 1.5rem;
+    --smaller-font-size: .875rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1024px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/*=============== HEADER ===============*/
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.logo {
+  height: var(--header-height);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo__title {
+  font-family: var(--header-font);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+/*=============== HOME ===============*/
+.home {
+  padding: 6.825rem 0 1.5rem;
+  height: 100vh;
+  display: grid;
+}
+.home__container {
+  display: grid;
+  row-gap: 3.8125rem;
+  grid-template-rows: auto;
+}
+.home__img {
+  text-align: center;
+}
+.home__img img {
+  width: 286.83px;
+}
+.home__data {
+  text-align: left;
+}
+.home__title {
+  font-size: var(--biggest-font-size);
+  font-weight: 700;
+  letter-spacing: -3.5px;
+}
+.home__description {
+  margin: 1.875rem 0 3.75rem;
+  font-size: var(--normal-font-size);
+  font-weight: 400;
+}
+.home__button {
+  display: inline-block;
+  font-family: var(--body-font);
+  font-size: var(--smaller-font-size);
+  font-weight: 700;
+  background-color: var(--button-color);
+  color: var(--first-color);
+  padding: 24px 43px;
+}
+.home__footer {
+  display: flex;
+  justify-content: center;
+  font-family: var(--footer-font);
+  font-weight: 500;
+  font-size: var(--smaller-font-size);
+  color: #BDBDBD;
+  align-self: flex-end;
+  column-gap: 0.5rem;
+}
+.home__footer a {
+  color: #BDBDBD;
+}
+.home__footer a:first-child {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  .logo {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+  .home__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 7.375rem;
+  }
+  .home__img img {
+    width: 539.22px;
+  }
+}
+@media screen and (min-width: 1048px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* For 2K resolutions (2048 x 1152, 2048 x 1536) */
+@media screen and (min-width: 2048px) {
+  body {
+    zoom: 1.7;
+  }
+}
+/* For 4K resolutions (3840 x 2160, 4096 x 2160) */
+@media screen and (min-width: 3840px) {
+  body {
+    zoom: 3.1;
+  }
+}

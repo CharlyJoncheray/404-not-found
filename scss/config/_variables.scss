@@ -1,0 +1,28 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;700&family=Space+Mono:wght@400;700&display=swap');
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  --first-color: #ffffff;
+  --text-color: #000000;
+  --button-color: #333333;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --header-font: 'Inconsolata', monospace;
+  --body-font: 'Space Mono', monospace;
+  --footer-font: 'Montserrat', sans-serif;
+
+  --biggest-font-size: 3rem;
+  --normal-font-size: 1.125rem;
+  --smaller-font-size: .875rem;
+
+  // Responsive typography
+  @media screen and (min-width: 1024px) {
+    --biggest-font-size: 4rem;
+    --normal-font-size: 1.5rem;
+    --smaller-font-size: .875rem;
+  }
+}
